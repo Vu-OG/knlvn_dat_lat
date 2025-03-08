@@ -53,4 +53,4 @@ function domMaincontent(thisElement) {
 }
 setTimeout(() => {
     domMaincontent(document.querySelector(`.${localStorage.getItem('namePage')}`));
-}, 1000);
+}, 100);
