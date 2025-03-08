@@ -56,4 +56,4 @@ if(localStorage.getItem('namePage') == null || localStorage.getItem('namePage') 
 }
 setTimeout(() => {
     domMaincontent(document.querySelector(`.${localStorage.getItem('namePage')}`));
-}, 100);
+}, 500);
