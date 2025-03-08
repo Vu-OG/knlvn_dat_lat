@@ -51,6 +51,9 @@ function domMaincontent(thisElement) {
     }
     document.title = localStorage.getItem('namePage').replace(/-/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
 }
+if(localStorage.getItem('namePage') == null || localStorage.getItem('namePage') == ''){
+    localStorage.setItem('namePage', 'trang-chu');
+}
 setTimeout(() => {
     domMaincontent(document.querySelector(`.${localStorage.getItem('namePage')}`));
-}, 100);
+}, 50);
