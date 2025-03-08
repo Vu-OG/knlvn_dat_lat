@@ -264,6 +264,7 @@ body {
     to {
         height: 1500px;
         border-radius: 5px;
+        background-position: 60% 65%;
     }
 }
 .section1 .images .img .filter {
