@@ -49,7 +49,7 @@ function domMaincontent(thisElement) {
     if (thisElement.classList.contains('album-anh')) {
         document.querySelector('.main').innerHTML = albumAnh_data;
     }
-
+    document.title = localStorage.getItem('namePage').replace(/-/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
 }
 setTimeout(() => {
     domMaincontent(document.querySelector(`.${localStorage.getItem('namePage')}`));

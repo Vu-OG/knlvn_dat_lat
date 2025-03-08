@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: space-between;
     padding-inline: 105px;
+    z-index: 2;
 }
 .header .logo {
     width: 131px;
