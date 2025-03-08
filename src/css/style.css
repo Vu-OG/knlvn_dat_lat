@@ -220,7 +220,7 @@ body {
 }
 
 .section1 .title .cmt {
-    padding-top: 15px;
+    padding-top: 25px;
     position: relative;
     margin: auto;
     width: 700px;
@@ -257,16 +257,19 @@ body {
     max-height: 500px;
     position: relative;
 }
+
 @keyframes show {
     from {
         height: 200px;
     }
+
     to {
         height: 1500px;
         border-radius: 5px;
         background-position: 60% 65%;
     }
 }
+
 .section1 .images .img .filter {
     width: 100%;
     height: 65%;
@@ -288,6 +291,7 @@ body {
     width: 100%;
     text-align: center;
 }
+
 .section1 .images .img p {
     position: absolute;
     bottom: 60px;
@@ -313,4 +317,52 @@ body {
 
 .section1 .images .img3 {
     background-image: url(../img/trangchu/section1/img3.webp);
+}
+
+.section2 {
+    text-align: center;
+}
+
+.section2 span {
+    font-family: 'Smooch';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 96px;
+    line-height: 82.8%;
+    color: #00A77F;
+}
+
+.section2 h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 96px;
+    text-transform: capitalize;
+    color: #272727;
+}
+.section2 .cmt::before{
+    content: 'a';
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50%;
+    width: 82px;
+    height: 9px;
+    background: #00A77F;
+    border-radius: 10px;
+}
+.section2 .cmt {
+    padding-top: 45px;
+    position: relative;
+    width: 921px;
+    margin: auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
 }
