@@ -3,13 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Đà lạt</title>
     <link rel="stylesheet" href="../src/css/style.css">
 </head>
 <body>
     <div class="header">
     </div>
-    <div class="main"></div>
+    <div class="main">
+        <div id="banner" class="banner">
+            <div class="title">
+                <span>Chào mừng đến</span>
+                <br>
+                <h1>Đà Lạt</h1>
+            </div>
+            <div class="filter"></div>
+            <a href="#section1"></a>
+            <img class="bannerEffect" src="../src/img/trangchu/bannerEffecy.webp">
+        </div>
+        <div id="section1" class="section1">
+            <div class="title">
+                <span>Điểm đến lý tưởng</span>
+                <h1>Dành cho giới trẻ</h1>
+                <p class="cmt">
+                    Nằm trên cao nguyên Lâm Đồng, nơi đây mang đến khí hậu mát mẻ quanh năm, cảnh sắc thiên nhiên thơ mộng và
+                    những công trình kiến trúc độc đáo.
+                    Sẵn sàng cho chuyến du ngoạn đầy trải nghiệm của bạn!
+                </p>
+            </div>
+            <div class="images">
+                <div class="img img1">
+                    <h2>Paraty</h2>
+                    <p>Rio de Janeiro</p>
+                    <div class="filter"></div>
+                </div>
+                <div class="img img2">
+                    <h2>Morretes</h2>
+                    <p>Paraná</p>
+                    <div class="filter"></div>
+                </div>
+                <div class="img img3">
+                    <h2>Olinda</h2>
+                    <p>Pernambuco</p>
+                    <div class="filter"></div>
+                </div>
+            </div>
+            <div class="more">
+                <a href="#">Khám phá thêm</a>
+                <script>
+                    document.querySelector('.more a').addEventListener('click', function () {
+                        document.querySelector('.images2').style.display = 'flex';
+                        document.querySelector('.more a').style.display = 'none';
+                    });
+                </script>
+                <div class="images2">
+                    <div class="img img1">
+                        <h2>Paraty</h2>
+                        <p>Rio de Janeiro</p>
+                        <div class="filter"></div>
+                    </div>
+                    <div class="img img2">
+                        <h2>Morretes</h2>
+                        <p>Paraná</p>
+                        <div class="filter"></div>
+                    </div>
+                    <div class="img img3">
+                        <h2>Olinda</h2>
+                        <p>Pernambuco</p>
+                        <div class="filter"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+        <div id="section2" class="section2">
+            <div class="title">
+                <span>About Us</span>
+                <h1>hành Trình Trẻ</h1>
+                <div class="cmt">
+                    "Hành Trình Trẻ – Khám phá, trải nghiệm, tự hào! Là một nhánh của Vì Tinh Tú T79, chúng tôi mong muốn khơi
+                    dậy tinh thần khám phá trong mỗi bạn trẻ. Mỗi chuyến đi không chỉ là hành trình trải nghiệm mà còn là cơ hội
+                    để hiểu, trân trọng và gìn giữ di sản cha ông. Hãy cùng nhau bước ra ngoài, cảm nhận vẻ đẹp đất nước và viết
+                    nên những câu chuyện thanh xuân ý nghĩa!"
+                </div>
+            </div>
+            <div class="imgs">
+                <div class="img_left"></div>
+                <div class="img_right">
+                    <div class="img_right_top">
+                        <div class="img_right_top_left"></div>
+                        <div class="img_right_top_right"></div>
+                    </div>
+                    <div class="img_right_bottom"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
         var header = document.querySelector('.header');
         var head = document.querySelector('head');

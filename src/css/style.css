@@ -8,6 +8,7 @@
 body {
     width: 100vw;
     overflow-x: hidden;
+    background-color: #FFFFFF;
 }
 
 /* main */
@@ -16,7 +17,7 @@ body {
     overflow-x: hidden;
     width: 100vw;
     height: calc(100dvh - 81px);
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(255, 255, 255);
     scrollbar-width: none;
 }
 
@@ -174,10 +175,11 @@ body {
 }
 
 .section1 {
+    padding-bottom: 80px;
     position: relative;
     width: 100%;
-    height: 900px;
-    background: linear-gradient(180deg, #00BC8F 61.24%, rgba(0, 188, 143, 0) 100%);
+    transition: 0.5s;
+    background: linear-gradient(180deg, #00BC8F 61.24%, rgba(255, 255, 255, 0) 100%);
 }
 
 .section1 .title {
@@ -233,29 +235,43 @@ body {
     color: #FFFFFF;
 }
 
-.section1 .images {
+.section1 .images,
+.section1 .images2 {
     margin-top: 40px;
     justify-content: center;
     display: flex;
     gap: 40px;
 }
 
-.section1 .images .img {
-    animation: show 5s linear;
-    animation-timeline: view();
-    animation-range: 30%;
+.section1 .images2 {
+    display: none;
+}
+
+.section1 .images .img,
+.section1 .images2 .img {
     overflow: hidden;
     text-align: center;
     border-radius: 40px;
     height: 200px;
     width: 310px;
-    background-size: auto 230%;
-    background-position: 64.5% 65%;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     position: relative;
     min-height: 300px;
     max-height: 500px;
     position: relative;
+}
+
+.section1 .images .img {
+    animation: show 5s linear;
+    animation-timeline: view();
+    animation-range: 30%;
+}
+
+.section1 .images2 .img {
+    animation: show 5s linear;
+    animation-timeline: view();
+    animation-range: 30%;
 }
 
 @keyframes show {
@@ -266,11 +282,11 @@ body {
     to {
         height: 1500px;
         border-radius: 5px;
-        background-position: 60% 65%;
     }
 }
 
-.section1 .images .img .filter {
+.section1 .images .img .filter,
+.section1 .images2 .img .filter {
     width: 100%;
     height: 65%;
     position: absolute;
@@ -278,7 +294,24 @@ body {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.92) 100%);
 }
 
-.section1 .images .img h2 {
+.more{
+    text-align: center;
+}
+.more a {
+    padding-top: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 47px;
+    border-bottom: 1px solid #000000;
+    color: #474747;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.section1 .images .img h2,
+.section1 .images2 .img h2 {
     position: absolute;
     bottom: 80px;
     z-index: 1;
@@ -292,7 +325,8 @@ body {
     text-align: center;
 }
 
-.section1 .images .img p {
+.section1 .images .img p,
+.section1 .images2 .img p {
     position: absolute;
     bottom: 60px;
     width: 100%;
@@ -308,19 +342,38 @@ body {
 }
 
 .section1 .images .img1 {
-    background-image: url(../img/trangchu/section1/img1.webp);
+    background-image: url(../img/trangchu/section1/img1.png);
+    background-position: 95% 65%;
 }
 
 .section1 .images .img2 {
-    background-image: url(../img/trangchu/section1/img2.webp);
+    background-image: url(../img/trangchu/section1/img2.png);
+    background-position: 45% 65%;
 }
 
 .section1 .images .img3 {
-    background-image: url(../img/trangchu/section1/img3.webp);
+    background-image: url(../img/trangchu/section1/img3.png);
+    background-position: 40% 65%;
+}
+
+.section1 .images2 .img1 {
+    background-image: url(../img/trangchu/section1/img4.png);
+    background-position: 40% 65%;
+}
+
+.section1 .images2 .img2 {
+    background-image: url(../img/trangchu/section1/img5.png);
+    background-position: 45% 65%;
+}
+
+.section1 .images2 .img3 {
+    background-image: url(../img/trangchu/section1/img6.png);
+    background-position: 40% 65%;
 }
 
 .section2 {
     text-align: center;
+    padding-top: 20px;
 }
 
 .section2 span {
@@ -341,7 +394,8 @@ body {
     text-transform: capitalize;
     color: #272727;
 }
-.section2 .cmt::before{
+
+.section2 .cmt::before {
     content: 'a';
     color: transparent;
     position: absolute;
@@ -353,6 +407,7 @@ body {
     background: #00A77F;
     border-radius: 10px;
 }
+
 .section2 .cmt {
     padding-top: 45px;
     position: relative;
@@ -365,4 +420,71 @@ body {
     line-height: 30px;
     text-align: center;
     color: #000000;
+}
+
+.section2 .imgs {
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+.section2 .imgs .img_left {
+    width: 292px;
+    height: 710px;
+}
+
+.section2 .imgs .img_right {
+    width: 938px;
+    height: 710px;
+}
+
+.section2 .imgs .img_right .img_right_top {
+    width: 100%;
+    height: 345px;
+    display: flex;
+}
+
+.section2 .imgs .img_right .img_right_bottom {
+    width: 100%;
+    margin-top: 20px;
+    height: 345px;
+    background: green;
+}
+
+.section2 .imgs .img_right .img_right_top .img_right_top_left {
+    width: 459px;
+    margin-right: 20px;
+    height: 100%;
+    background: pink;
+}
+
+.section2 .imgs .img_right .img_right_top .img_right_top_right {
+    width: 459px;
+    height: 100%;
+    background: purple;
+}
+
+.section2 .imgs .img_left,
+.section2 .imgs .img_right .img_right_top .img_right_top_left,
+.section2 .imgs .img_right .img_right_top .img_right_top_right,
+.section2 .imgs .img_right .img_right_bottom {
+    background-size: cover;
+    background-position: center;
+}
+
+.section2 .imgs .img_left {
+    background-image: url(../img/trangchu/sec2/img1.png);
+}
+
+.section2 .imgs .img_right .img_right_top .img_right_top_left {
+    background-image: url(../img/trangchu/sec2/img2.png);
+}
+
+.section2 .imgs .img_right .img_right_top .img_right_top_right {
+    background-image: url(../img/trangchu/sec2/img3.png);
+}
+
+.section2 .imgs .img_right .img_right_bottom {
+    background-image: url(../img/trangchu/sec2/img4.png);
 }
