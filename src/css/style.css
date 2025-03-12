@@ -341,32 +341,32 @@ body {
 }
 
 .section1 .images .img1 {
-    background-image: url(../img/trangchu/section1/img1.png);
+    background-image: url(../img/trangchu/section1/img1.webp);
     background-position: 95% 65%;
 }
 
 .section1 .images .img2 {
-    background-image: url(../img/trangchu/section1/img2.png);
+    background-image: url(../img/trangchu/section1/img2.webp);
     background-position: 45% 65%;
 }
 
 .section1 .images .img3 {
-    background-image: url(../img/trangchu/section1/img3.png);
+    background-image: url(../img/trangchu/section1/img3.webp);
     background-position: 40% 65%;
 }
 
 .section1 .images2 .img1 {
-    background-image: url(../img/trangchu/section1/img4.png);
+    background-image: url(../img/trangchu/section1/img4.webp);
     background-position: 40% 65%;
 }
 
 .section1 .images2 .img2 {
-    background-image: url(../img/trangchu/section1/img5.png);
+    background-image: url(../img/trangchu/section1/img5.webp);
     background-position: 45% 65%;
 }
 
 .section1 .images2 .img3 {
-    background-image: url(../img/trangchu/section1/img6.png);
+    background-image: url(../img/trangchu/section1/img6.webp);
     background-position: 40% 65%;
 }
 
@@ -471,22 +471,22 @@ body {
 }
 
 .section2 .imgs .img_left {
-    background-image: url(../img/trangchu/sec2/img1.png);
+    background-image: url(../img/trangchu/sec2/img1.webp);
     border-radius: 10rem;
 }
 
 .section2 .imgs .img_right .img_right_top .img_right_top_left {
-    background-image: url(../img/trangchu/sec2/img2.png);
+    background-image: url(../img/trangchu/sec2/img2.webp);
     border-radius: 10rem;
 }
 
 .section2 .imgs .img_right .img_right_top .img_right_top_right {
-    background-image: url(../img/trangchu/sec2/img3.png);
+    background-image: url(../img/trangchu/sec2/img3.webp);
     border-radius: 10rem;
 }
 
 .section2 .imgs .img_right .img_right_bottom {
-    background-image: url(../img/trangchu/sec2/img4.png);
+    background-image: url(../img/trangchu/sec2/img4.webp);
     border-radius: 10rem;
 }
 
@@ -523,7 +523,7 @@ body {
     left: 98rem;
     width: 401rem;
     height: 214rem;
-    background-image: url(../img/footerlogo.png);
+    background-image: url(../img/footerlogo.webp);
 }
 
 .footer_bottom .text {
