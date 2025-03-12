@@ -1,6 +1,6 @@
 header.innerHTML = `
         <div class="logo">
-            <img src="../src/img/logo.png" alt="">
+            <img src="../src/img/logo.svg" alt="">
         </div>
         <ul class="nav">
             <li class="trang-chu"><a href = "#banner" >Trang chủ</a></li>
