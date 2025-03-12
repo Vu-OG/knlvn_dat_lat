@@ -51,10 +51,9 @@
     .header{
         position: fixed;
         width: 100%;
-        box-sizing: border-box;
         bottom: 0;
-        padding-inline: 15px;
-        height: 60px;
+        padding: 15rem;
+        height: 60rem;
         left: 0;
     }
     .logo{
@@ -71,22 +70,22 @@
         position: relative;
     }
     .header .nav li a{
-        font-size: 1px;
-        height: 40px;
-        width: 40px;
+        font-size: 1rem;
+        height: 40rem;
+        width: 40rem;
         color: transparent;
     }
     .header .nav li:hover:not(.active) a {
-        border-bottom:0px;
-        translate: 0 0px;
+        border-bottom:0rem;
+        translate: 0 0rem;
     }
     .header .nav li a:hover::after{
         opacity: 1;
     }
     .header .nav li a::after{
         position: absolute;
-        width: 40px;
-        height: 40px;
+        width: 80rem;
+        height: 80rem;
         content: 'a';
         color:  transparent;
         background-repeat: no-repeat;

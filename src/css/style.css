@@ -4,7 +4,64 @@
     padding: 0;
     margin: 0;
 }
+html{
+    font-size: calc(100vw / 1440);
+}
+@media screen and (max-width: 990rem) {
+    .main {
+        height: calc(100dvh - 60rem);
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
 
+    .banner {
+        height: calc(100dvh - 60rem);
+    }
+
+    .banner .filter {
+        height: calc((100dvh - 60rem) / 3 * 2);
+    }
+}
+
+@media screen and (max-width: 1200rem) {
+    html{
+        font-size: calc(100vw / 1200rem);
+    }
+    .banner .title {
+        width: 100%;
+        translate: 0 0;
+        top: 0;
+        left: 0;
+    }
+
+    .banner .title span {
+        display: block;
+        padding-left: 0;
+        font-size: 150rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner .title h1 {
+        display: block;
+        width: 100%;
+        font-size: 300rem;
+        text-align: center;
+    }
+
+    .banner button {
+        width: 300rem;
+        height: 57rem;
+        bottom: 50rem;
+    }
+
+    .banner button:hover {
+        width: 380rem;
+        height: 87rem;
+        bottom: 35rem;
+    }
+}
 body {
     width: 100vw;
     overflow-x: hidden;
@@ -16,7 +73,7 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     width: 100vw;
-    height: calc(100dvh - 81px);
+    height: calc(100dvh - 81rem);
     background-color: rgb(255, 255, 255);
     scrollbar-width: none;
 }
@@ -25,21 +82,13 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 990px) {
-    .main {
-        height: calc(100dvh - 60px);
-        position: absolute;
-        top: 0;
-        width: 100%;
-    }
-}
 
 /* in main */
 
 /* trang chu */
 .banner {
     width: 100%;
-    height: calc(100dvh - 81px);
+    height: calc(100dvh - 81rem);
     background-image: url(../img/trangchu/bannerBG.webp);
     background-size: cover;
     background-position: center;
@@ -59,19 +108,19 @@ body {
     font-family: 'Smooch';
     font-style: normal;
     font-weight: 400;
-    font-size: 144px;
+    font-size: 144rem;
     color: #FFC700;
     position: relative;
-    padding-left: 20px;
+    padding-left: 20rem;
 }
 
 .banner .title h1 {
     display: inline;
-    width: 1050px;
+    width: 1050rem;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
-    font-size: 300px;
+    font-size: 300rem;
     line-height: 67%;
     color: #FFFFFF;
 }
@@ -80,7 +129,7 @@ body {
 
 .banner .filter {
     width: 100%;
-    height: calc((100dvh - 81px) / 3 * 2);
+    height: calc((100dvh - 81rem) / 3 * 2);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -90,8 +139,8 @@ body {
 .banner a {
     border: none;
     background: transparent;
-    width: 100px;
-    height: 50px;
+    width: 100rem;
+    height: 50rem;
     background-image: url(../img/trangchu/bannerBtn.webp);
     background-size: cover;
     background-position: center;
@@ -99,83 +148,32 @@ body {
     position: absolute;
     translate: -50%;
     left: calc(50%);
-    bottom: 70px;
-    width: 350px;
-    height: 67px;
+    bottom: 70rem;
+    width: 350rem;
+    height: 67rem;
     cursor: pointer;
 }
 
 .banner a:hover {
-    width: 430px;
-    height: 97px;
+    width: 430rem;
+    height: 97rem;
     background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    background-size: calc(100% - 80px) calc(100% - 30px);
-    bottom: 55px;
+    border-radius: 10rem;
+    background-size: calc(100% - 80rem) calc(100% - 30rem);
+    bottom: 55rem;
 }
 
 .banner .bannerEffect {
-    height: 40px;
+    height: 40rem;
     position: absolute;
     bottom: 0;
     translate: 0 50%;
     z-index: 1;
 }
 
-@media screen and (max-width: 990px) {
-    .main {
-        height: calc(100dvh - 60px);
-        position: absolute;
-        top: 0;
-    }
-
-    .banner {
-        height: calc(100dvh - 60px);
-    }
-
-    .banner .filter {
-        height: calc((100dvh - 60px) / 3 * 2);
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .banner .title {
-        width: 100%;
-        translate: 0 0;
-        top: 0;
-        left: 0;
-    }
-
-    .banner .title span {
-        display: block;
-        padding-left: 0;
-        font-size: 150px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .banner .title h1 {
-        display: block;
-        width: 100%;
-        font-size: 300px;
-        text-align: center;
-    }
-
-    .banner button {
-        width: 300px;
-        height: 57px;
-        bottom: 50px;
-    }
-
-    .banner button:hover {
-        width: 380px;
-        height: 87px;
-        bottom: 35px;
-    }
-}
 
 .section1 {
-    padding-bottom: 80px;
+    padding-bottom: 80rem;
     position: relative;
     width: 100%;
     transition: 0.5s;
@@ -183,7 +181,7 @@ body {
 }
 
 .section1 .title {
-    padding-top: 50px;
+    padding-top: 50rem;
     width: 100%;
     text-align: center;
 }
@@ -192,18 +190,18 @@ body {
     font-family: 'Smooch';
     font-style: normal;
     font-weight: 300;
-    font-size: 80px;
+    font-size: 80rem;
     line-height: 82.8%;
     color: #FFD600;
 }
 
 .section1 .title h1 {
-    margin-top: 3px;
+    margin-top: 3rem;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 80px;
-    line-height: 100px;
+    font-size: 80rem;
+    line-height: 100rem;
     text-transform: capitalize;
     color: #FFFFFF;
 }
@@ -215,32 +213,32 @@ body {
     top: 0;
     left: 50%;
     translate: -50%;
-    width: 82px;
-    height: 5px;
+    width: 82rem;
+    height: 5rem;
     background: #00FFC2;
-    border-radius: 10px;
+    border-radius: 10rem;
 }
 
 .section1 .title .cmt {
-    padding-top: 25px;
+    padding-top: 25rem;
     position: relative;
     margin: auto;
-    width: 700px;
+    width: 700rem;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 20rem;
+    line-height: 25rem;
     text-align: center;
     color: #FFFFFF;
 }
 
 .section1 .images,
 .section1 .images2 {
-    margin-top: 40px;
+    margin-top: 40rem;
     justify-content: center;
     display: flex;
-    gap: 40px;
+    gap: 40rem;
 }
 
 .section1 .images2 {
@@ -249,16 +247,16 @@ body {
 
 .section1 .images .img,
 .section1 .images2 .img {
+    border-radius: 10rem;
     overflow: hidden;
     text-align: center;
-    border-radius: 40px;
-    height: 200px;
-    width: 310px;
-    background-size: auto 100%;
+    border-radius: 40rem;
+    height: 200rem;
+    width: 310rem;
     background-repeat: no-repeat;
     position: relative;
-    min-height: 300px;
-    max-height: 500px;
+    min-height: 300rem;
+    max-height: 500rem;
     position: relative;
 }
 
@@ -276,12 +274,12 @@ body {
 
 @keyframes show {
     from {
-        height: 200px;
+        height: 200rem;
     }
 
     to {
-        height: 1500px;
-        border-radius: 5px;
+        height: 1500rem;
+        border-radius: 5rem;
     }
 }
 
@@ -294,17 +292,18 @@ body {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.92) 100%);
 }
 
-.more{
+.more {
     text-align: center;
 }
+
 .more a {
-    padding-top: 50px;
+    padding-top: 50rem;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 40px;
-    line-height: 47px;
-    border-bottom: 1px solid #000000;
+    font-size: 40rem;
+    line-height: 47rem;
+    border-bottom: 1rem solid #000000;
     color: #474747;
     display: inline-flex;
     text-decoration: none;
@@ -313,13 +312,13 @@ body {
 .section1 .images .img h2,
 .section1 .images2 .img h2 {
     position: absolute;
-    bottom: 80px;
+    bottom: 80rem;
     z-index: 1;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 800;
-    font-size: 40px;
-    line-height: 47px;
+    font-size: 40rem;
+    line-height: 47rem;
     color: #FFFFFF;
     width: 100%;
     text-align: center;
@@ -328,15 +327,15 @@ body {
 .section1 .images .img p,
 .section1 .images2 .img p {
     position: absolute;
-    bottom: 60px;
+    bottom: 60rem;
     width: 100%;
     text-align: center;
     z-index: 1;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 14rem;
+    line-height: 16rem;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -373,14 +372,14 @@ body {
 
 .section2 {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 20rem;
 }
 
 .section2 span {
     font-family: 'Smooch';
     font-style: normal;
     font-weight: 300;
-    font-size: 96px;
+    font-size: 96rem;
     line-height: 82.8%;
     color: #00A77F;
 }
@@ -389,8 +388,8 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 800;
-    font-size: 80px;
-    line-height: 96px;
+    font-size: 80rem;
+    line-height: 96rem;
     text-transform: capitalize;
     color: #272727;
 }
@@ -402,89 +401,169 @@ body {
     top: 0;
     left: 50%;
     translate: -50%;
-    width: 82px;
-    height: 9px;
+    width: 82rem;
+    height: 9rem;
     background: #00A77F;
-    border-radius: 10px;
+    border-radius: 10rem;
 }
 
 .section2 .cmt {
-    padding-top: 45px;
+    padding-top: 45rem;
     position: relative;
-    width: 921px;
+    width: 921rem;
     margin: auto;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 200;
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 26rem;
+    line-height: 30rem;
     text-align: center;
     color: #000000;
 }
 
 .section2 .imgs {
-    margin-top: 40px;
+    margin-top: 40rem;
     justify-content: center;
     display: flex;
-    gap: 20px;
+    gap: 20rem;
 }
 
 .section2 .imgs .img_left {
-    width: 292px;
-    height: 710px;
+    width: 292rem;
+    height: 710rem;
 }
 
 .section2 .imgs .img_right {
-    width: 938px;
-    height: 710px;
+    width: 938rem;
+    height: 710rem;
 }
 
 .section2 .imgs .img_right .img_right_top {
     width: 100%;
-    height: 345px;
+    height: 345rem;
     display: flex;
 }
 
 .section2 .imgs .img_right .img_right_bottom {
     width: 100%;
-    margin-top: 20px;
-    height: 345px;
-    background: green;
+    margin-top: 20rem;
+    height: 345rem;
 }
 
 .section2 .imgs .img_right .img_right_top .img_right_top_left {
-    width: 459px;
-    margin-right: 20px;
+    width: 459rem;
+    margin-right: 20rem;
     height: 100%;
-    background: pink;
 }
 
 .section2 .imgs .img_right .img_right_top .img_right_top_right {
-    width: 459px;
+    width: 459rem;
     height: 100%;
-    background: purple;
 }
 
 .section2 .imgs .img_left,
 .section2 .imgs .img_right .img_right_top .img_right_top_left,
 .section2 .imgs .img_right .img_right_top .img_right_top_right,
 .section2 .imgs .img_right .img_right_bottom {
-    background-size: cover;
+    background-size: auto calc(100% + 20rem);
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .section2 .imgs .img_left {
     background-image: url(../img/trangchu/sec2/img1.png);
+    border-radius: 10rem;
 }
 
 .section2 .imgs .img_right .img_right_top .img_right_top_left {
     background-image: url(../img/trangchu/sec2/img2.png);
+    border-radius: 10rem;
 }
 
 .section2 .imgs .img_right .img_right_top .img_right_top_right {
     background-image: url(../img/trangchu/sec2/img3.png);
+    border-radius: 10rem;
 }
 
 .section2 .imgs .img_right .img_right_bottom {
     background-image: url(../img/trangchu/sec2/img4.png);
+    border-radius: 10rem;
+}
+
+.footer {
+    width: 100%;
+}
+
+.footer_top {
+    position: relative;
+    height: 523rem;
+    width: 100%;
+    background-image: url(../img/trangchu/bannerBG.webp);
+    background-size: 100% auto;
+}
+
+.footer_top_filter {
+    position: absolute;
+    height: 416rem;
+    width: 100%;
+    top: 0;
+    background: linear-gradient(180.77deg, #FFFFFF 22.47%, rgba(255, 255, 255, 0) 99.34%);
+}
+
+.footer_bottom {
+    height: 327rem;
+    width: 100%;
+    background-color: #003531;
+    position: relative;
+}
+
+.footer_bottom .logo {
+    position: absolute;
+    top: 67rem;
+    left: 98rem;
+    width: 401rem;
+    height: 214rem;
+    background-image: url(../img/footerlogo.png);
+}
+
+.footer_bottom .text {
+    position: absolute;
+    right: 98rem;
+    padding-top: 50rem;
+}
+
+.footer_bottom .text .top {
+    display: flex;
+    align-items: center;
+}
+
+.footer_bottom .text .top h1 {
+    margin-right: 128rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16rem;
+    line-height: 156.69%;
+    text-transform: uppercase;
+    color: #D0D0D0;
+}
+
+.footer_bottom .text .top p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16rem;
+    line-height: 25rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer_bottom .text .bottom {
+    margin-top: 30rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16rem;
+    line-height: 156.69%;
+    text-transform: uppercase;
+    color: rgba(218, 218, 218, 0.6);
 }
